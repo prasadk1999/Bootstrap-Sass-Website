@@ -1,0 +1,23 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.border-right {
+	border-right: 1px solid $gray-200;
+	@include media-breakpoint-down(md) {
+		border-bottom: 1px solid $gray-200;
+		border-right: none;
+		margin-bottom: 1rem;
+	}
+}
+.services {
+	position: relative;
+	.h1 {
+		color: $primary;
+	}
+	.icon {
+		font-size: 2rem;
+		color: $primary;
+	}
+	&__content {
+		padding-top: 8rem;
+	}
+}
